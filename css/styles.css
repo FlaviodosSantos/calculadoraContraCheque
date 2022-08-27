@@ -51,6 +51,11 @@ hr {
     margin: 0.5rem;
 }
 
+h4,
+h5 {
+    text-align: center;
+    color: #fff;
+}
 .hide {
     display: none;
 }
