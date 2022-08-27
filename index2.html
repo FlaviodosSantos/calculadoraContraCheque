@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!--    
+    
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+    -->
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h3>Calculadora Contra Cheque</h3>
+        </header>
+        <div id="form">
+            <label for="">Salário base</label>
+            <input type="text" id="entrada" placeholder="Digite o salario base">
+            <br>
+            <label for="">Tempo de serviço</label>
+            <input type="text" id="tempo" placeholder="Digite o tempo de serviço">
+            <br>
+            <label for="">Numero de dependentes</label>
+            <input type="text" id="dependentes" placeholder="Digite o num. de dependentes">
+            <br>
+            <label for="">Adicional de Titulação</label>
+            <input type="text" id="porcentagem" placeholder="Digite a porcentagem">
+            <br>
+            <label for="">Gratificação de Nivel Superior</label>
+            <input type="text" id="gratificacao" placeholder="s para sim, n para não">
+            <br>
+            <button type="submit" id="btn_enviar" onclick="calculaContraCheque()">
+                Calcular 
+            </button>
+            <hr>
+            <label for="">Salário no plano de cargos</label>
+            <input type="text" id="salario">
+            <br>
+            <label for="">Insalubridade</label>
+            <input type="text" id="insalubridade">
+            <br>
+            <label for="">ADTS</label>
+            <input type="text" id="adts">
+            <br>
+            <label for="">Adicional de titulação</label>
+            <input type="text" id="titulacao">
+            <br>
+            <label for="">Grat. Niv. Superior</label>
+            <input type="text" id="gratNivSup">
+            <br>
+            <label for="">Salario Bruto</label>
+            <input type="text" id="bruto">
+            <hr>
+            <label for="">Desconto INSS</label>
+            <input type="text" id="inss">
+            <br>
+            <label for="">Desconto IRRF</label>
+            <input type="text" id="irrf">
+            <hr>
+            <label for="">Salario Liquido</label>
+            <input type="text" id="liquido">
+        </div>
+    </div>
+    
+    
+    <!--v
+    <div class="container">
+        <header>
+            <h3>Calculadora de Juros Compostos</h3> 
+        </header>
+        <form id="form">
+            <input type="text" id="entrada">
+            <br>
+            <input type="text" id="tempo">
+            <br>
+            <button type="submit" id="btn_enviar" onclick="juros_compostos()">
+                Calcular Juros composto
+            </button>
+            <hr>
+            <input type="text" id="saida">
+        </form>
+    </div>         
+
+        <script>
+        function juros_compostos() {
+            //preventDefault();
+            var capital = document.getElementById("entrada").value
+            //var capital = parseInt(num)
+            var taxaJuros = 5 / 100
+            var tempoAplicacao = document.getElementById("tempo").value
+            var montante = (capital * Math.pow((1 + taxaJuros), tempoAplicacao)).toFixed(2);
+
+            document.getElementById("salario").value = montante
+            
+        }
+    </script>
+
+    -->
+    
+    <script src="js/scripts.js"></script>
+    
+</body>
+</html>
