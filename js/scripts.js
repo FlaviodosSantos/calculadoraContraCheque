@@ -39,7 +39,7 @@ function calculaContraCheque() {
     } else if (baseInss > 2427.35 && baseInss <= 3641.03) { //3ªfaixa
         inss = 90.90 + 109.38 + ((baseInss - 2427.35) * 0.12)
     } else if (baseInss > 3641.03 && baseInss <= 7087.22) { //4ªfaixa
-        inss = 90.90 + 109.38 + 145.64((baseInss - 3641.03) * 0.14)
+        inss = 90.90 + 109.38 + 145.64 + ((baseInss - 3641.03) * 0.14)
     } else {
         inss = 828.39
     }
