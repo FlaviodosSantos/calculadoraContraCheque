@@ -4,3 +4,4 @@ App feito para calcular desconto inss e irrf dos agentes de endemias de Caicó-R
 
 
 Criado com Javascript puro, html e css.
+-
