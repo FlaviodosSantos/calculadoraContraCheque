@@ -1,5 +1,6 @@
 function add(a, b) {
-    return a + b;
+  var soma = a + b;
+  return soma;
 }
 
 module.exports = add;

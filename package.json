@@ -2,9 +2,7 @@
   "devDependencies": {
     "qunit": "^2.19.1"
   },
-
   "scripts": {
     "test": "qunit"
   }
 }
-
