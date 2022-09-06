@@ -63,7 +63,7 @@ function calcula_plano(entrada, tempo) {
   console.log("montante : " + montante);
   return montante;
 }
-//teste
+//teste ==============================================
 QUnit.test("calcula plano", (assert) => {
   var cal = calcula_plano(2424, 17);
   assert.equal(cal, 2806.083);
@@ -74,8 +74,8 @@ function calcula_insalubridade(plano_de_cargos) {
   console.log("insalubridade :" + insalubridade);
   return insalubridade;
 }
-//teste
-QUnit.test("calcula plano", (assert) => {
+//teste==============================================
+QUnit.test("calcula insalubridade", (assert) => {
   var cal = calcula_plano(2424, 17);
   assert.equal(cal, 2806.083, "insalubridade ok");
 });
