@@ -63,22 +63,12 @@ function calcula_plano(entrada, tempo) {
   console.log("montante : " + montante);
   return montante;
 }
-//teste ==============================================
-QUnit.test("calcula plano", (assert) => {
-  var cal = calcula_plano(2424, 17);
-  assert.equal(cal, 2806.083);
-});
 
 function calcula_insalubridade(plano_de_cargos) {
   var insalubridade = Number(plano_de_cargos * (30 / 100));
   console.log("insalubridade :" + insalubridade);
   return insalubridade;
 }
-//teste==============================================
-QUnit.test("calcula insalubridade", (assert) => {
-  var cal = calcula_plano(2424, 17);
-  assert.equal(cal, 2806.083, "insalubridade ok");
-});
 
 function calcula_tempo_seviço(plano_de_cargos, tempo) {
   var tempoAplicacao = Math.trunc(tempo / 5);
@@ -167,5 +157,15 @@ function calcula_sal_liquido(bruto, inss, irrf) {
   return liquido;
 }
 
-//module.exports = calculaContraCheque;
-module.exports = calcula_plano;
+module.exports = {
+  calculaContraCheque,
+  calcula_plano,
+  calcula_insalubridade,
+  calcula_tempo_seviço,
+  calcula_titulacao,
+  verif_gratificacao,
+  calcula_sal_bruto,
+  calcula_inss,
+  calcula_irrf,
+  calcula_sal_liquido,
+};
